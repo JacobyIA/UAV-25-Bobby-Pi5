@@ -1,0 +1,13 @@
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/uninstall.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/camera_ros_uninstall.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/utils.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/param.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/camera_component.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/camera_node.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/test.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/edit_cache.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/rebuild_cache.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/list_install_components.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/install.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/install/local.dir
+/home/baddies/camera_ws/build/camera_ros/CMakeFiles/install/strip.dir

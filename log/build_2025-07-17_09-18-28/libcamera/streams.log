@@ -1,0 +1,887 @@
+[0.029s] Invoking command in '/home/baddies/camera_ws/build/libcamera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson setup --libdir=lib --prefix=/home/baddies/camera_ws/install/libcamera --buildtype=release /home/baddies/camera_ws/build/libcamera /home/baddies/camera_ws/src/libcamera
+[0.354s] [1mThe Meson build system[0m
+[0.355s] Version: 1.3.2
+[0.355s] Source dir: [1m/home/baddies/camera_ws/src/libcamera[0m
+[0.355s] Build dir: [1m/home/baddies/camera_ws/build/libcamera[0m
+[0.355s] Build type: [1mnative build[0m
+[0.388s] Project name: [1mlibcamera[0m
+[0.389s] Project version: [1m0.5.1[0m
+[0.828s] C compiler for the host machine: [1mcc[0m (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0")
+[0.828s] C linker for the host machine: [1mcc[0m ld.bfd 2.42
+[1.171s] C++ compiler for the host machine: [1mc++[0m (gcc 13.3.0 "c++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0")
+[1.171s] C++ linker for the host machine: [1mc++[0m ld.bfd 2.42
+[1.418s] Host machine cpu family: [1maarch64[0m
+[1.418s] Host machine cpu: [1maarch64[0m
+[1.584s] Header "[1mfcntl.h[0m" has symbol "[1mF_ADD_SEALS[0m" : [1;32mYES[0m 
+[1.625s] Header "[1munistd.h[0m" has symbol "[1missetugid[0m" : [1;31mNO[0m 
+[1.664s] Header "[1mlocale.h[0m" has symbol "[1mlocale_t[0m" : [1;32mYES[0m 
+[1.706s] Header "[1msys/mman.h[0m" has symbol "[1mmemfd_create[0m" : [1;32mYES[0m 
+[1.792s] Header "[1mstdlib.h[0m" has symbol "[1msecure_getenv[0m" : [1;32mYES[0m 
+[1.812s] Compiler for C supports arguments -Wno-c99-designator: [1;31mNO[0m 
+[1.843s] Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m1.8.1[0m
+[2.122s] Run-time dependency [1mlttng-ust[0m found: [1;32mYES[0m [36m2.13.7[0m
+[2.136s] Program [1m./parser.py[0m found: [1;32mYES[0m (/home/baddies/camera_ws/src/libcamera/utils/codegen/ipc/./parser.py)
+[2.136s] Program [1m./generate.py[0m found: [1;32mYES[0m (/home/baddies/camera_ws/src/libcamera/utils/codegen/ipc/./generate.py)
+[2.136s] Program [1m./extract-docs.py[0m found: [1;32mYES[0m (/home/baddies/camera_ws/src/libcamera/utils/codegen/ipc/./extract-docs.py)
+[2.244s] Configuring [1mversion.h[0m using configuration
+[2.257s] Program [1mopenssl[0m found: [1;32mYES[0m (/usr/bin/openssl)
+[2.584s] Found CMake: [1m/usr/bin/cmake[0m (3.28.3)
+[3.698s] Run-time dependency [1mlibyuv[0m found: [1;31mNO[0m (tried pkgconfig and cmake)
+[3.750s] Has header "[1mlibyuv.h[0m" : [1;31mNO[0m 
+[3.839s] Library [1matomic[0m found: [1;32mYES[0m
+[3.845s] Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+[3.871s] Run-time dependency [1mlibdw[0m found: [1;32mYES[0m [36m0.190[0m
+[3.879s] Run-time dependency [1mlibunwind[0m found: [1;32mYES[0m [36m1.6.2[0m
+[3.966s] Header "[1mexecinfo.h[0m" has symbol "[1mbacktrace[0m" : [1;32mYES[0m 
+[4.098s] Library [1mrt[0m found: [1;32mYES[0m
+[4.112s] Run-time dependency [1mlibpisp[0m found: [1;32mYES[0m [36m1.2.0[0m
+[4.202s] Checking for function "[1mdlopen[0m" : [1;32mYES[0m 
+[4.221s] Run-time dependency [1mlibudev[0m found: [1;32mYES[0m [36m255[0m
+[4.236s] Run-time dependency [1myaml-0.1[0m found: [1;32mYES[0m [36m0.2.5[0m
+[4.251s] Run-time dependency [1mgnutls[0m found: [1;32mYES[0m [36m3.8.3[0m
+[4.279s] Dependency [1mlibexif[0m skipped: feature [1mandroid[0m disabled
+[4.280s] Dependency [1mlibjpeg[0m skipped: feature [1mandroid[0m disabled
+[4.388s] Run-time dependency [1mlibevent_pthreads[0m found: [1;32mYES[0m [36m2.1.12-stable[0m
+[4.402s] Run-time dependency [1mlibtiff-4[0m found: [1;32mYES[0m [36m4.5.1[0m
+[4.448s] Run-time dependency [1mGTest[0m found: [1;32mYES[0m [36m1.14.0[0m
+[4.469s] Run-time dependency [1mlibdrm[0m found: [1;32mYES[0m [36m2.4.122[0m
+[4.478s] Run-time dependency [1mlibjpeg[0m found: [1;32mYES[0m [36m2.1.5[0m
+[4.516s] Run-time dependency [1msdl2[0m found: [1;32mYES[0m [36m2.30.0[0m
+[4.586s] Run-time dependency [1mqt6[0m (modules: Core, Gui, OpenGL, OpenGLWidgets, Widgets) found: [1;31mNO[0m (tried pkgconfig)
+[4.604s] Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.80.0[0m
+[4.620s] Run-time dependency [1mgstreamer-video-1.0[0m found: [1;32mYES[0m [36m1.24.2[0m
+[4.636s] Run-time dependency [1mgstreamer-allocators-1.0[0m found: [1;32mYES[0m [36m1.24.2[0m
+[4.700s] Run-time dependency [1mpython3[0m found: [1;32mYES[0m [36m3.12[0m
+[4.720s] Run-time dependency [1mpybind11[0m found: [1;32mYES[0m [36m2.11.1[0m
+[4.749s] Configuring [1mlibcamerify[0m using configuration
+[4.763s] Program [1mdoxygen[0m found: [1;31mNO[0m
+[4.764s] Program [1mdot[0m found: [1;32mYES[0m (/usr/bin/dot)
+[4.764s] Program [1msphinx-build-3 sphinx-build[0m found: [1;31mNO[0m
+[4.785s] Configuring [1mconfig.h[0m using configuration
+[5.181s] Program python3 (jinja2, yaml, jinja2, ply) found: [1;32mYES[0m (/usr/bin/python3) modules: jinja2, yaml, jinja2, ply
+[5.183s] Build targets in project: [1m78[0m
+[5.183s] 
+[5.184s] libcamera [36m0.5.1[0m
+[5.184s] 
+[5.184s]   [1mVersions[0m
+[5.185s]     Sources                  : 0.5.1+99-044ceaa4
+[5.185s] 
+[5.185s]   [1mPaths[0m
+[5.185s]     LIBCAMERA_DATA_DIR       : "/home/baddies/camera_ws/install/libcamera/share/libcamera"
+[5.185s]     LIBCAMERA_SYSCONF_DIR    : "/home/baddies/camera_ws/install/libcamera/etc/libcamera"
+[5.185s]     IPA_PROXY_DIR            : "/home/baddies/camera_ws/install/libcamera/libexec/libcamera"
+[5.185s]     IPA_CONFIG_DIR           : "/home/baddies/camera_ws/install/libcamera/etc/libcamera/ipa:/home/baddies/camera_ws/install/libcamera/share/libcamera/ipa"
+[5.185s]     IPA_MODULE_DIR           : "/home/baddies/camera_ws/install/libcamera/lib/libcamera/ipa"
+[5.185s] 
+[5.186s]   [1mConfiguration[0m
+[5.186s]     SoftISP support          : true
+[5.186s]     IPA modules signed with  : gnutls
+[5.186s]     Enabled pipelines        : imx8-isi
+[5.186s]                                mali-c55
+[5.186s]                                rkisp1
+[5.186s]                                rpi/pisp
+[5.186s]                                rpi/vc4
+[5.186s]                                simple
+[5.187s]                                uvcvideo
+[5.188s]     Enabled IPA modules      : mali-c55
+[5.189s]                                rkisp1
+[5.189s]                                rpi/pisp
+[5.190s]                                rpi/vc4
+[5.191s]                                simple
+[5.191s]     Controls files           : control_ids_core.yaml
+[5.191s]                                control_ids_debug.yaml
+[5.191s]                                control_ids_draft.yaml
+[5.191s]                                control_ids_rpi.yaml
+[5.191s]     Properties files         : property_ids_draft.yaml
+[5.191s]                                property_ids_core.yaml
+[5.191s]     Hotplug support          : [1;32mYES[0m
+[5.191s]     Tracing support          : [1;32mYES[0m
+[5.192s]     Android support          : [1;31mNO[0m
+[5.192s]     GStreamer support        : [1;32mYES[0m
+[5.192s]     Python bindings          : [1;32mYES[0m
+[5.192s]     V4L2 emulation support   : [1;32mYES[0m
+[5.192s]     cam application          : [1;32mYES[0m
+[5.192s]     qcam application         : [1;31mNO[0m
+[5.192s]     lc-compliance application: [1;32mYES[0m
+[5.192s]     Unit tests               : [1;31mNO[0m
+[5.192s] 
+[5.192s]   [1mUser defined options[0m
+[5.193s]     buildtype                : release
+[5.193s]     libdir                   : lib
+[5.193s]     prefix                   : /home/baddies/camera_ws/install/libcamera
+[5.193s] 
+[5.235s] Found ninja-1.11.1 at /usr/bin/ninja
+[5.712s] Invoked command in '/home/baddies/camera_ws/build/libcamera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson setup --libdir=lib --prefix=/home/baddies/camera_ws/install/libcamera --buildtype=release /home/baddies/camera_ws/build/libcamera /home/baddies/camera_ws/src/libcamera
+[5.713s] Invoking command in '/home/baddies/camera_ws/build/libcamera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson compile
+[6.059s] [1;32mINFO:[0m autodetecting backend as ninja
+[6.068s] [1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja
+[6.082s] 
+[6.083s] [0/316] Generating utils/codegen/ipc/mojom_templates with a custom command (wrapped by meson to set env)[K
+[6.084s] [0/316] Compiling C object utils/ipu3/ipu3-pack.p/ipu3-pack.c.o[K
+[6.085s] [0/316] Compiling C object utils/ipu3/ipu3-unpack.p/ipu3-unpack.c.o[K
+[6.085s] [0/316] Generating include/libcamera/internal/tp_header with a custom command[K
+[6.087s] [0/316] Generating include/libcamera/ipa/core_mojom_module with a custom command (wrapped by meson to set env)[K
+[6.391s] [0/316] Generating include/libcamera/control_ids_rpi.yaml_h with a custom command (wrapped by meson to set env)[K
+[6.394s] [1/316] Generating include/libcamera/internal/tp_header with a custom command[K
+[6.468s] [1/316] Generating include/libcamera/property_ids_core.yaml_h with a custom command (wrapped by meson to set env)[K
+[6.468s] [2/316] Compiling C object utils/ipu3/ipu3-unpack.p/ipu3-unpack.c.o[K
+[6.487s] [2/316] Linking target utils/ipu3/ipu3-unpack[K
+[6.488s] [3/316] Compiling C object utils/ipu3/ipu3-pack.p/ipu3-pack.c.o[K
+[6.582s] [3/316] Linking target utils/ipu3/ipu3-pack[K
+[6.583s] [4/316] Linking target utils/ipu3/ipu3-unpack[K
+[6.607s] [4/316] Generating include/libcamera/formats_h with a custom command[K
+[6.608s] [5/316] Generating include/libcamera/control_ids_rpi.yaml_h with a custom command (wrapped by meson to set env)[K
+[6.621s] [5/316] Generating src/ipa-priv-key with a custom command[K
+[6.621s] [6/316] Linking target utils/ipu3/ipu3-pack[K
+[6.773s] [6/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/bound_method.cpp.o[K
+[6.773s] [7/316] Generating include/libcamera/formats_h with a custom command[K
+[6.778s] [7/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/class.cpp.o[K
+[6.778s] [8/316] Generating include/libcamera/ipa/core_mojom_module with a custom command (wrapped by meson to set env)[K
+[6.911s] [8/316] Generating include/libcamera/ipa/mali-c55_mojom_module with a custom command (wrapped by meson to set env)[K
+[6.913s] [9/316] Generating utils/codegen/ipc/mojom_templates with a custom command (wrapped by meson to set env)[K
+[6.934s] [9/316] Generating include/libcamera/ipa/core_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[6.935s] [10/316] Generating include/libcamera/property_ids_core.yaml_h with a custom command (wrapped by meson to set env)[K
+[7.240s] [10/316] Generating include/libcamera/ipa/core_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[7.240s] [11/316] Generating include/libcamera/ipa/core_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[7.354s] [11/316] Generating include/libcamera/ipa/rkisp1_mojom_module with a custom command (wrapped by meson to set env)[K
+[7.354s] [12/316] Generating include/libcamera/ipa/mali-c55_mojom_module with a custom command (wrapped by meson to set env)[K
+[7.550s] [12/316] Generating include/libcamera/ipa/mali-c55_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[7.551s] [13/316] Generating include/libcamera/ipa/rkisp1_mojom_module with a custom command (wrapped by meson to set env)[K
+[7.677s] [13/316] Generating include/libcamera/ipa/mali-c55_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[7.677s] [14/316] Generating include/libcamera/ipa/core_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[7.684s] [14/316] Generating include/libcamera/ipa/mali-c55_proxy_h with a custom command (wrapped by meson to set env)[K
+[7.686s] [15/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/class.cpp.o[K
+[7.929s] [15/316] Generating include/libcamera/ipa/rkisp1_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[7.929s] [16/316] Generating include/libcamera/ipa/mali-c55_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[8.083s] [16/316] Generating include/libcamera/ipa/rkisp1_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[8.083s] [17/316] Generating src/ipa-priv-key with a custom command[K
+[8.084s] ....+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.....+..........+......+...............+..+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*..+.....................+...+......+......+..+............+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[8.085s] ...+...+....+........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.+.......+..+...+....+..........................+...+.+.....+.........+.+.....+.+...+.....+.........+.......+...+..+......+............+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*....+....+..+.............+..+.........+....+.....+...+...+.......+..+......+.........+......+.+......+........+.+...+......+..+.......+...+...+...........+...+...+....+...........+.........+...+.......+.........+..+.......+........+...........................+.+...........+.........+.......+.....+.......+...+...+...........+..........+......+..+...+..........+...+...........+......+.......+......+..+....+...+.....+.+.....+.+...............+........+.+..+...+......+..........+......+....................+..................+............+............+.............+...+..+....+...+........+...+.+...+..+....+.........+........+....+...+.....+.+..+...............+.......+..+.........+......+.+..+.+.........+..+...+..........+........+.........+....+..+.............+..+...+...................+..+..........+.....+.+..+...+............+...+...+....+.....................+......+...+..+...+......+..........+.....+.........+......+.......+..+..........+..+...+................+..+...+.........+.......+........+......+....+......+......+...+...+...+............+...+.....+....+...+.....+..................+......+.+..+.+..+.............+.........+...+..+.+.....+.+...+......+......+.....+.+..+...+....+.....+.+.........+...+......+..+...+......+.+..+...+.........+....+......+......+.....+.........+.+...+...........+.........+.+...........+....+...+...+.....+...+.........+.+.........+.....+..........+............+..............+...............+....+...+.....+.........+....+..+...+...................+...........+.........+...+....+.........+...........+...+.+...........+......+....+...+..+.........+.........+...+.......+............+...+...+........+.........+......+.........+.+............+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[8.086s] 
+[8.118s] [17/316] Generating include/libcamera/ipa/rkisp1_proxy_h with a custom command (wrapped by meson to set env)[K
+[8.118s] [18/316] Generating include/libcamera/ipa/mali-c55_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[8.479s] [18/316] Generating include/libcamera/ipa/raspberrypi_mojom_module with a custom command (wrapped by meson to set env)[K
+[8.479s] [19/316] Generating include/libcamera/ipa/raspberrypi_mojom_module with a custom command (wrapped by meson to set env)[K
+[8.495s] [19/316] Generating include/libcamera/ipa/raspberrypi_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[8.496s] [20/316] Generating include/libcamera/ipa/rkisp1_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[8.504s] [20/316] Generating include/libcamera/ipa/raspberrypi_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[8.504s] [21/316] Generating include/libcamera/ipa/mali-c55_proxy_h with a custom command (wrapped by meson to set env)[K
+[8.633s] [21/316] Generating include/libcamera/ipa/raspberrypi_proxy_h with a custom command (wrapped by meson to set env)[K
+[8.634s] [22/316] Generating include/libcamera/ipa/rkisp1_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[8.678s] [22/316] Generating include/libcamera/ipa/soft_mojom_module with a custom command (wrapped by meson to set env)[K
+[8.681s] [23/316] Generating include/libcamera/ipa/rkisp1_proxy_h with a custom command (wrapped by meson to set env)[K
+[8.801s] [23/316] Generating include/libcamera/gen-header with a custom command[K
+[8.801s] [24/316] Generating include/libcamera/gen-header with a custom command[K
+[8.982s] [24/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/flags.cpp.o[K
+[8.983s] [25/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/flags.cpp.o[K
+[9.138s] [25/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/object.cpp.o[K
+[9.144s] [26/316] Generating include/libcamera/ipa/soft_mojom_module with a custom command (wrapped by meson to set env)[K
+[9.176s] [26/316] Generating include/libcamera/ipa/soft_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[9.176s] [27/316] Generating include/libcamera/ipa/raspberrypi_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[9.252s] [27/316] Generating include/libcamera/ipa/soft_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[9.252s] [28/316] Generating include/libcamera/ipa/raspberrypi_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[9.473s] [28/316] Generating include/libcamera/ipa/soft_proxy_h with a custom command (wrapped by meson to set env)[K
+[9.478s] [29/316] Generating include/libcamera/ipa/raspberrypi_proxy_h with a custom command (wrapped by meson to set env)[K
+[9.760s] [29/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/shared_fd.cpp.o[K
+[9.761s] [30/316] Generating include/libcamera/ipa/soft_ipa_serializer_h with a custom command (wrapped by meson to set env)[K
+[9.782s] [30/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/signal.cpp.o[K
+[9.784s] [31/316] Generating include/libcamera/ipa/soft_ipa_interface_h with a custom command (wrapped by meson to set env)[K
+[10.065s] [31/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/unique_fd.cpp.o[K
+[10.066s] [32/316] Generating include/libcamera/ipa/soft_proxy_h with a custom command (wrapped by meson to set env)[K
+[10.261s] [32/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/backtrace.cpp.o[K
+[10.266s] [33/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/bound_method.cpp.o[K
+[11.079s] [33/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/event_dispatcher.cpp.o[K
+[11.080s] [34/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/signal.cpp.o[K
+[12.219s] [34/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/event_dispatcher_poll.cpp.o[K
+[12.220s] [35/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/unique_fd.cpp.o[K
+[12.249s] [35/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/event_notifier.cpp.o[K
+[12.250s] [36/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/event_dispatcher.cpp.o[K
+[12.495s] [36/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/file.cpp.o[K
+[12.500s] [37/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/object.cpp.o[K
+[12.571s] [37/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/log.cpp.o[K
+[12.572s] [38/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/shared_fd.cpp.o[K
+[12.941s] [38/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/memfd.cpp.o[K
+[12.941s] [39/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/backtrace.cpp.o[K
+[14.453s] [39/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/message.cpp.o[K
+[14.457s] [40/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/event_dispatcher_poll.cpp.o[K
+[14.474s] [40/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/mutex.cpp.o[K
+[14.477s] [41/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/memfd.cpp.o[K
+[15.034s] [41/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/semaphore.cpp.o[K
+[15.041s] [42/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/mutex.cpp.o[K
+[15.097s] [42/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/thread.cpp.o[K
+[15.098s] [43/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/semaphore.cpp.o[K
+[15.189s] [43/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/timer.cpp.o[K
+[15.190s] [44/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/message.cpp.o[K
+[15.995s] [44/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/utils.cpp.o[K
+[15.996s] [45/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/event_notifier.cpp.o[K
+[16.033s] [45/316] Generating src/libcamera/proxy/mali-c55_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[16.037s] [46/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/file.cpp.o[K
+[16.632s] [46/316] Generating src/libcamera/proxy/rkisp1_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[16.638s] [47/316] Generating src/libcamera/proxy/rkisp1_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[16.718s] [47/316] Generating src/libcamera/proxy/raspberrypi_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[16.719s] [48/316] Generating src/libcamera/proxy/mali-c55_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[17.168s] [48/316] Generating src/libcamera/proxy/soft_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[17.172s] [49/316] Generating src/libcamera/proxy/soft_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[17.379s] [49/316] Generating src/libcamera/controls_ids_cpp with a custom command (wrapped by meson to set env)[K
+[17.379s] [50/316] Generating src/libcamera/proxy/raspberrypi_proxy_cpp with a custom command (wrapped by meson to set env)[K
+[17.966s] [50/316] Generating src/libcamera/properties_ids_cpp with a custom command (wrapped by meson to set env)[K
+[17.967s] [51/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/timer.cpp.o[K
+[18.092s] [51/316] Generating src/libcamera/version.cpp with a custom command[K
+[18.092s] [52/316] Generating src/libcamera/controls_ids_cpp with a custom command (wrapped by meson to set env)[K
+[18.097s] [52/316] Generating src/libcamera/ipa_pub_key_cpp with a custom command[K
+[18.098s] [53/316] Generating src/libcamera/properties_ids_cpp with a custom command (wrapped by meson to set env)[K
+[18.242s] [53/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._control_ids.cpp.o[K
+[18.242s] [54/316] Generating src/libcamera/ipa_pub_key_cpp with a custom command[K
+[18.242s] writing RSA key
+[18.243s] 
+[18.511s] [54/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._property_ids.cpp.o[K
+[18.511s] [55/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/utils.cpp.o[K
+[18.603s] [55/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_mali-c55_ipa_proxy.cpp.o[K
+[18.603s] [56/316] Generating src/libcamera/version.cpp with a custom command[K
+[18.668s] [56/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._version.cpp.o[K
+[18.671s] [57/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/log.cpp.o[K
+[20.018s] [57/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_rkisp1_ipa_proxy.cpp.o[K
+[20.019s] [58/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._version.cpp.o[K
+[20.581s] [58/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_raspberrypi_ipa_proxy.cpp.o[K
+[20.581s] [59/316] Compiling C++ object src/libcamera/base/libcamera-base.so.0.5.1.p/thread.cpp.o[K
+[20.822s] [59/316] Linking target src/libcamera/base/libcamera-base.so.0.5.1[K
+[20.823s] [60/316] Linking target src/libcamera/base/libcamera-base.so.0.5.1[K
+[21.344s] [60/316] Generating symbol file src/libcamera/base/libcamera-base.so.0.5.1.p/libcamera-base.so.0.5.1.symbols[K
+[21.345s] [61/316] Generating symbol file src/libcamera/base/libcamera-base.so.0.5.1.p/libcamera-base.so.0.5.1.symbols[K
+[21.763s] [61/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_soft_ipa_proxy.cpp.o[K
+[21.764s] [62/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._property_ids.cpp.o[K
+[24.385s] [62/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._ipa_pub_key.cpp.o[K
+[24.390s] [63/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._ipa_pub_key.cpp.o[K
+[29.981s] [63/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera.cpp.o[K
+[29.981s] [64/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._control_ids.cpp.o[K
+[30.505s] [64/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera_manager.cpp.o[K
+[30.508s] [65/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_mali-c55_ipa_proxy.cpp.o[K
+[33.415s] [65/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/color_space.cpp.o[K
+[33.418s] [66/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_soft_ipa_proxy.cpp.o[K
+[33.964s] [66/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/controls.cpp.o[K
+[33.964s] [67/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_rkisp1_ipa_proxy.cpp.o[K
+[34.267s] [67/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/fence.cpp.o[K
+[34.268s] [68/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera.cpp.o[K
+[34.636s] [68/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/framebuffer.cpp.o[K
+[34.636s] [69/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera_manager.cpp.o[K
+[34.927s] [69/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/framebuffer_allocator.cpp.o[K
+[34.928s] [70/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/fence.cpp.o[K
+[35.637s] [70/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/geometry.cpp.o[K
+[35.640s] [71/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/meson-generated_.._proxy_raspberrypi_ipa_proxy.cpp.o[K
+[36.663s] [71/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/orientation.cpp.o[K
+[36.664s] [72/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/orientation.cpp.o[K
+[37.635s] [72/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pixel_format.cpp.o[K
+[37.636s] [73/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/framebuffer.cpp.o[K
+[37.675s] [73/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/request.cpp.o[K
+[37.675s] [74/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/color_space.cpp.o[K
+[37.712s] [74/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/stream.cpp.o[K
+[37.713s] [75/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/geometry.cpp.o[K
+[38.300s] [75/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/transform.cpp.o[K
+[38.300s] [76/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pixel_format.cpp.o[K
+[38.339s] [76/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/bayer_format.cpp.o[K
+[38.339s] [77/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/framebuffer_allocator.cpp.o[K
+[38.880s] [77/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/byte_stream_buffer.cpp.o[K
+[38.883s] [78/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/transform.cpp.o[K
+[40.636s] [78/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera_controls.cpp.o[K
+[40.637s] [79/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/byte_stream_buffer.cpp.o[K
+[40.922s] [79/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera_lens.cpp.o[K
+[40.926s] [80/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/controls.cpp.o[K
+[41.194s] [80/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/clock_recovery.cpp.o[K
+[41.195s] [81/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera_controls.cpp.o[K
+[41.691s] [81/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/control_serializer.cpp.o[K
+[41.692s] [82/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/stream.cpp.o[K
+[42.388s] [82/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/control_validator.cpp.o[K
+[42.392s] [83/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/bayer_format.cpp.o[K
+[42.429s] [83/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/converter.cpp.o[K
+[42.429s] [84/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/control_validator.cpp.o[K
+[43.194s] [84/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/debug_controls.cpp.o[K
+[43.195s] [85/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/request.cpp.o[K
+[43.533s] [85/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/delayed_controls.cpp.o[K
+[43.536s] [86/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/camera_lens.cpp.o[K
+[44.024s] [86/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/device_enumerator.cpp.o[K
+[44.025s] [87/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/clock_recovery.cpp.o[K
+[45.813s] [87/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/device_enumerator_sysfs.cpp.o[K
+[45.816s] [88/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/debug_controls.cpp.o[K
+[46.437s] [88/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/dma_buf_allocator.cpp.o[K
+[46.437s] [89/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/device_enumerator.cpp.o[K
+[47.028s] [89/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/formats.cpp.o[K
+[47.032s] [90/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/converter.cpp.o[K
+[47.126s] [90/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_controls.cpp.o[K
+[47.127s] [91/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_controls.cpp.o[K
+[47.211s] [91/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_data_serializer.cpp.o[K
+[47.212s] [92/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/delayed_controls.cpp.o[K
+[47.303s] [92/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_interface.cpp.o[K
+[47.303s] [93/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_interface.cpp.o[K
+[47.304s] [93/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_manager.cpp.o[K
+[47.307s] [94/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/device_enumerator_sysfs.cpp.o[K
+[49.481s] [94/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_module.cpp.o[K
+[49.485s] [95/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/control_serializer.cpp.o[K
+[50.013s] [95/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_proxy.cpp.o[K
+[50.013s] [96/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/dma_buf_allocator.cpp.o[K
+[51.003s] [96/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipc_pipe.cpp.o[K
+[51.003s] [97/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_module.cpp.o[K
+[52.078s] [97/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipc_pipe_unixsocket.cpp.o[K
+[52.078s] [98/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/formats.cpp.o[K
+[52.562s] [98/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipc_unixsocket.cpp.o[K
+[52.566s] [99/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_manager.cpp.o[K
+[53.213s] [99/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/mapped_framebuffer.cpp.o[K
+[53.213s] [100/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_data_serializer.cpp.o[K
+[53.494s] [100/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/matrix.cpp.o[K
+[53.498s] [101/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipc_pipe.cpp.o[K
+[55.212s] [101/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/media_device.cpp.o[K
+[55.212s] [102/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/mapped_framebuffer.cpp.o[K
+[55.473s] [102/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/media_object.cpp.o[K
+[55.477s] [103/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipc_pipe_unixsocket.cpp.o[K
+[55.633s] [103/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/media_pipeline.cpp.o[K
+[55.633s] [104/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipa_proxy.cpp.o[K
+[55.802s] [104/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_handler.cpp.o[K
+[55.803s] [105/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/ipc_unixsocket.cpp.o[K
+[56.868s] [105/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/process.cpp.o[K
+[56.868s] [106/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/matrix.cpp.o[K
+[57.676s] [106/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pub_key.cpp.o[K
+[57.678s] [107/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/media_object.cpp.o[K
+[57.889s] [107/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/shared_mem_object.cpp.o[K
+[57.890s] [108/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pub_key.cpp.o[K
+[59.266s] [108/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/source_paths.cpp.o[K
+[59.266s] [109/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/media_device.cpp.o[K
+[59.281s] [109/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sysfs.cpp.o[K
+[59.284s] [110/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/process.cpp.o[K
+[59.301s] [110/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_device.cpp.o[K
+[59.306s] [111/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/shared_mem_object.cpp.o[K
+[59.712s] [111/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_pixelformat.cpp.o[K
+[59.713s] [112/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/source_paths.cpp.o[K
+[61.315s] [112/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_subdevice.cpp.o[K
+[61.319s] [113/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/media_pipeline.cpp.o[K
+[62.954s] [113/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_videodevice.cpp.o[K
+[62.954s] [114/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_pixelformat.cpp.o[K
+[63.008s] [114/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/vector.cpp.o[K
+[63.009s] [115/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sysfs.cpp.o[K
+[63.795s] [115/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/yaml_parser.cpp.o[K
+[63.797s] [116/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_handler.cpp.o[K
+[65.378s] [116/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/converter_converter_v4l2_m2m.cpp.o[K
+[65.385s] [117/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/vector.cpp.o[K
+[69.748s] [117/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_imx8-isi_imx8-isi.cpp.o[K
+[69.752s] [118/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_device.cpp.o[K
+[71.547s] [118/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_mali-c55_mali-c55.cpp.o[K
+[71.548s] [119/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/yaml_parser.cpp.o[K
+[71.999s] [119/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rkisp1_rkisp1.cpp.o[K
+[72.000s] [120/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/converter_converter_v4l2_m2m.cpp.o[K
+[73.595s] [120/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rkisp1_rkisp1_path.cpp.o[K
+[73.595s] [121/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_videodevice.cpp.o[K
+[78.574s] [121/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_common_delayed_controls.cpp.o[K
+[78.576s] [122/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_imx8-isi_imx8-isi.cpp.o[K
+[79.851s] [122/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_common_pipeline_base.cpp.o[K
+[79.857s] [123/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_common_delayed_controls.cpp.o[K
+[81.668s] [123/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_common_rpi_stream.cpp.o[K
+[81.672s] [124/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rkisp1_rkisp1_path.cpp.o[K
+[84.617s] [124/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_pisp_pisp.cpp.o[K
+[84.618s] [125/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/v4l2_subdevice.cpp.o[K
+[86.218s] [125/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_vc4_vc4.cpp.o[K
+[86.218s] [126/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_common_rpi_stream.cpp.o[K
+[88.808s] [126/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_simple_simple.cpp.o[K
+[88.813s] [127/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_mali-c55_mali-c55.cpp.o[K
+[90.813s] [127/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_uvcvideo_uvcvideo.cpp.o[K
+[90.817s] [128/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rkisp1_rkisp1.cpp.o[K
+[95.673s] [128/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor.cpp.o[K
+[95.678s] [129/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor.cpp.o[K
+[99.301s] [129/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor_legacy.cpp.o[K
+[99.304s] [130/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_uvcvideo_uvcvideo.cpp.o[K
+[99.479s] [130/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor_properties.cpp.o[K
+[99.480s] [131/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_common_pipeline_base.cpp.o[K
+[104.559s] [131/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor_raw.cpp.o[K
+[104.559s] [132/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor_legacy.cpp.o[K
+[106.079s] [132/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_debayer.cpp.o[K
+[106.080s] [133/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor_properties.cpp.o[K
+[107.076s] [133/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_debayer_cpu.cpp.o[K
+[107.077s] [134/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_vc4_vc4.cpp.o[K
+[108.565s] [134/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_software_isp.cpp.o[K
+[108.567s] [135/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_rpi_pisp_pisp.cpp.o[K
+[109.112s] [135/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_swstats_cpu.cpp.o[K
+[109.116s] [136/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_debayer.cpp.o[K
+[109.524s] [136/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/tracepoints.cpp.o[K
+[109.528s] [137/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/pipeline_simple_simple.cpp.o[K
+[111.910s] [137/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/device_enumerator_udev.cpp.o[K
+[111.911s] [138/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_swstats_cpu.cpp.o[K
+[112.043s] [138/316] Generating src/libcamera/proxy/worker/mali-c55_proxy_worker with a custom command (wrapped by meson to set env)[K
+[112.043s] [139/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/sensor_camera_sensor_raw.cpp.o[K
+[112.528s] [139/316] Generating src/libcamera/proxy/worker/rkisp1_proxy_worker with a custom command (wrapped by meson to set env)[K
+[112.529s] [140/316] Generating src/libcamera/proxy/worker/rkisp1_proxy_worker with a custom command (wrapped by meson to set env)[K
+[112.951s] [140/316] Compiling C++ object src/libcamera/proxy/worker/rkisp1_ipa_proxy.p/meson-generated_.._rkisp1_ipa_proxy_worker.cpp.o[K
+[112.951s] [141/316] Generating src/libcamera/proxy/worker/mali-c55_proxy_worker with a custom command (wrapped by meson to set env)[K
+[113.614s] [141/316] Compiling C++ object src/libcamera/proxy/worker/mali-c55_ipa_proxy.p/meson-generated_.._mali-c55_ipa_proxy_worker.cpp.o[K
+[113.615s] [142/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/tracepoints.cpp.o[K
+[114.640s] [142/316] Generating src/libcamera/proxy/worker/raspberrypi_proxy_worker with a custom command (wrapped by meson to set env)[K
+[114.641s] [143/316] Generating src/libcamera/proxy/worker/raspberrypi_proxy_worker with a custom command (wrapped by meson to set env)[K
+[116.154s] [143/316] Compiling C++ object src/libcamera/proxy/worker/raspberrypi_ipa_proxy.p/meson-generated_.._raspberrypi_ipa_proxy_worker.cpp.o[K
+[116.159s] [144/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_debayer_cpu.cpp.o[K
+[116.976s] [144/316] Generating src/libcamera/proxy/worker/soft_proxy_worker with a custom command (wrapped by meson to set env)[K
+[116.976s] [145/316] Generating src/libcamera/proxy/worker/soft_proxy_worker with a custom command (wrapped by meson to set env)[K
+[117.546s] [145/316] Compiling C++ object src/libcamera/proxy/worker/soft_ipa_proxy.p/meson-generated_.._soft_ipa_proxy_worker.cpp.o[K
+[117.546s] [146/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/device_enumerator_udev.cpp.o[K
+[117.826s] [146/316] Compiling C++ object src/ipa/libipa/libipa.a.p/agc_mean_luminance.cpp.o[K
+[117.826s] [147/316] Compiling C++ object src/libcamera/libcamera.so.0.5.1.p/software_isp_software_isp.cpp.o[K
+[118.738s] [147/316] Linking target src/libcamera/libcamera.so.0.5.1[K
+[118.740s] [148/316] Linking target src/libcamera/libcamera.so.0.5.1[K
+[119.275s] [148/316] Generating symbol file src/libcamera/libcamera.so.0.5.1.p/libcamera.so.0.5.1.symbols[K
+[119.276s] [149/316] Generating symbol file src/libcamera/libcamera.so.0.5.1.p/libcamera.so.0.5.1.symbols[K
+[122.201s] [149/316] Compiling C++ object src/ipa/libipa/libipa.a.p/algorithm.cpp.o[K
+[122.201s] [150/316] Compiling C++ object src/ipa/libipa/libipa.a.p/algorithm.cpp.o[K
+[126.276s] [150/316] Compiling C++ object src/ipa/libipa/libipa.a.p/awb_bayes.cpp.o[K
+[126.277s] [151/316] Compiling C++ object src/libcamera/proxy/worker/rkisp1_ipa_proxy.p/meson-generated_.._rkisp1_ipa_proxy_worker.cpp.o[K
+[126.806s] [151/316] Linking target src/libcamera/proxy/worker/rkisp1_ipa_proxy[K
+[126.809s] [152/316] Compiling C++ object src/ipa/libipa/libipa.a.p/agc_mean_luminance.cpp.o[K
+[126.951s] [152/316] Compiling C++ object src/ipa/libipa/libipa.a.p/awb_grey.cpp.o[K
+[126.951s] [153/316] Linking target src/libcamera/proxy/worker/rkisp1_ipa_proxy[K
+[127.668s] [153/316] Compiling C++ object src/ipa/libipa/libipa.a.p/awb.cpp.o[K
+[127.668s] [154/316] Compiling C++ object src/libcamera/proxy/worker/mali-c55_ipa_proxy.p/meson-generated_.._mali-c55_ipa_proxy_worker.cpp.o[K
+[128.356s] [154/316] Linking target src/libcamera/proxy/worker/mali-c55_ipa_proxy[K
+[128.360s] [155/316] Linking target src/libcamera/proxy/worker/mali-c55_ipa_proxy[K
+[129.238s] [155/316] Compiling C++ object src/ipa/libipa/libipa.a.p/camera_sensor_helper.cpp.o[K
+[129.240s] [156/316] Compiling C++ object src/libcamera/proxy/worker/raspberrypi_ipa_proxy.p/meson-generated_.._raspberrypi_ipa_proxy_worker.cpp.o[K
+[129.912s] [156/316] Linking target src/libcamera/proxy/worker/raspberrypi_ipa_proxy[K
+[129.912s] [157/316] Linking target src/libcamera/proxy/worker/raspberrypi_ipa_proxy[K
+[130.694s] [157/316] Compiling C++ object src/ipa/libipa/libipa.a.p/colours.cpp.o[K
+[130.694s] [158/316] Compiling C++ object src/libcamera/proxy/worker/soft_ipa_proxy.p/meson-generated_.._soft_ipa_proxy_worker.cpp.o[K
+[131.221s] [158/316] Linking target src/libcamera/proxy/worker/soft_ipa_proxy[K
+[131.222s] [159/316] Linking target src/libcamera/proxy/worker/soft_ipa_proxy[K
+[131.575s] [159/316] Compiling C++ object src/ipa/libipa/libipa.a.p/exposure_mode_helper.cpp.o[K
+[131.579s] [160/316] Compiling C++ object src/ipa/libipa/libipa.a.p/awb_grey.cpp.o[K
+[131.612s] [160/316] Compiling C++ object src/ipa/libipa/libipa.a.p/fc_queue.cpp.o[K
+[131.615s] [161/316] Compiling C++ object src/ipa/libipa/libipa.a.p/awb.cpp.o[K
+[132.091s] [161/316] Compiling C++ object src/ipa/libipa/libipa.a.p/fixedpoint.cpp.o[K
+[132.092s] [162/316] Compiling C++ object src/ipa/libipa/libipa.a.p/fixedpoint.cpp.o[K
+[133.227s] [162/316] Compiling C++ object src/ipa/libipa/libipa.a.p/histogram.cpp.o[K
+[133.230s] [163/316] Compiling C++ object src/ipa/libipa/libipa.a.p/awb_bayes.cpp.o[K
+[133.857s] [163/316] Compiling C++ object src/ipa/libipa/libipa.a.p/interpolator.cpp.o[K
+[133.860s] [164/316] Compiling C++ object src/ipa/libipa/libipa.a.p/colours.cpp.o[K
+[134.514s] [164/316] Compiling C++ object src/ipa/libipa/libipa.a.p/lsc_polynomial.cpp.o[K
+[134.517s] [165/316] Compiling C++ object src/ipa/libipa/libipa.a.p/fc_queue.cpp.o[K
+[134.665s] [165/316] Compiling C++ object src/ipa/libipa/libipa.a.p/lux.cpp.o[K
+[134.669s] [166/316] Compiling C++ object src/ipa/libipa/libipa.a.p/exposure_mode_helper.cpp.o[K
+[136.308s] [166/316] Compiling C++ object src/ipa/libipa/libipa.a.p/module.cpp.o[K
+[136.308s] [167/316] Compiling C++ object src/ipa/libipa/libipa.a.p/histogram.cpp.o[K
+[136.384s] [167/316] Compiling C++ object src/ipa/libipa/libipa.a.p/pwl.cpp.o[K
+[136.385s] [168/316] Compiling C++ object src/ipa/libipa/libipa.a.p/interpolator.cpp.o[K
+[136.703s] [168/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/ipa_context.cpp.o[K
+[136.704s] [169/316] Compiling C++ object src/ipa/libipa/libipa.a.p/camera_sensor_helper.cpp.o[K
+[137.096s] [169/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/mali-c55.cpp.o[K
+[137.096s] [170/316] Compiling C++ object src/ipa/libipa/libipa.a.p/module.cpp.o[K
+[137.758s] [170/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_agc.cpp.o[K
+[137.759s] [171/316] Compiling C++ object src/ipa/libipa/libipa.a.p/lsc_polynomial.cpp.o[K
+[138.642s] [171/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_awb.cpp.o[K
+[138.646s] [172/316] Compiling C++ object src/ipa/libipa/libipa.a.p/lux.cpp.o[K
+[139.494s] [172/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_blc.cpp.o[K
+[139.495s] [173/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/ipa_context.cpp.o[K
+[141.339s] [173/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_lsc.cpp.o[K
+[141.340s] [174/316] Compiling C++ object src/ipa/libipa/libipa.a.p/pwl.cpp.o[K
+[141.401s] [174/316] Linking static target src/ipa/libipa/libipa.a[K
+[141.402s] [175/316] Linking static target src/ipa/libipa/libipa.a[K
+[143.102s] [175/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/ipa_context.cpp.o[K
+[143.104s] [176/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_awb.cpp.o[K
+[143.910s] [176/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/params.cpp.o[K
+[143.910s] [177/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_blc.cpp.o[K
+[143.928s] [177/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/rkisp1.cpp.o[K
+[143.929s] [178/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_lsc.cpp.o[K
+[144.151s] [178/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_agc.cpp.o[K
+[144.154s] [179/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/algorithms_agc.cpp.o[K
+[144.972s] [179/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_awb.cpp.o[K
+[144.974s] [180/316] Compiling C++ object src/ipa/mali-c55/ipa_mali_c55.so.p/mali-c55.cpp.o[K
+[145.348s] [180/316] Linking target src/ipa/mali-c55/ipa_mali_c55.so[K
+[145.349s] [181/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/ipa_context.cpp.o[K
+[145.620s] [181/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_blc.cpp.o[K
+[145.620s] [182/316] Linking target src/ipa/mali-c55/ipa_mali_c55.so[K
+[145.681s] [182/316] Generating src/ipa/mali-c55/ipa_mali_c55.so.sign with a custom command[K
+[145.682s] [183/316] Generating src/ipa/mali-c55/ipa_mali_c55.so.sign with a custom command[K
+[147.151s] [183/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_ccm.cpp.o[K
+[147.152s] [184/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/params.cpp.o[K
+[150.127s] [184/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_cproc.cpp.o[K
+[150.128s] [185/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_blc.cpp.o[K
+[151.766s] [185/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_dpcc.cpp.o[K
+[151.766s] [186/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_cproc.cpp.o[K
+[152.874s] [186/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_dpf.cpp.o[K
+[152.874s] [187/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_awb.cpp.o[K
+[153.928s] [187/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_filter.cpp.o[K
+[153.929s] [188/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_agc.cpp.o[K
+[154.950s] [188/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_goc.cpp.o[K
+[154.951s] [189/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/rkisp1.cpp.o[K
+[155.563s] [189/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_gsl.cpp.o[K
+[155.567s] [190/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_dpcc.cpp.o[K
+[155.638s] [190/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_lsc.cpp.o[K
+[155.639s] [191/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_ccm.cpp.o[K
+[156.737s] [191/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_lux.cpp.o[K
+[156.737s] [192/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_dpf.cpp.o[K
+[158.809s] [192/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper.cpp.o[K
+[158.815s] [193/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_gsl.cpp.o[K
+[159.586s] [193/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov5647.cpp.o[K
+[159.586s] [194/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_filter.cpp.o[K
+[160.220s] [194/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx219.cpp.o[K
+[160.220s] [195/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_goc.cpp.o[K
+[160.329s] [195/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx283.cpp.o[K
+[160.330s] [196/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_lux.cpp.o[K
+[163.712s] [196/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx290.cpp.o[K
+[163.716s] [197/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx283.cpp.o[K
+[163.915s] [197/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx296.cpp.o[K
+[163.919s] [198/316] Compiling C++ object src/ipa/rkisp1/ipa_rkisp1.so.p/algorithms_lsc.cpp.o[K
+[163.952s] [198/316] Linking target src/ipa/rkisp1/ipa_rkisp1.so[K
+[163.953s] [199/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov5647.cpp.o[K
+[164.192s] [199/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx415.cpp.o[K
+[164.193s] [200/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper.cpp.o[K
+[164.353s] [200/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx477.cpp.o[K
+[164.354s] [201/316] Linking target src/ipa/rkisp1/ipa_rkisp1.so[K
+[164.414s] [201/316] Generating src/ipa/rkisp1/ipa_rkisp1.so.sign with a custom command[K
+[164.419s] [202/316] Generating src/ipa/rkisp1/ipa_rkisp1.so.sign with a custom command[K
+[164.710s] [202/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx500.cpp.o[K
+[164.713s] [203/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx290.cpp.o[K
+[166.473s] [203/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx519.cpp.o[K
+[166.475s] [204/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx219.cpp.o[K
+[167.892s] [204/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx708.cpp.o[K
+[167.897s] [205/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx415.cpp.o[K
+[168.616s] [205/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov64a40.cpp.o[K
+[168.617s] [206/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx296.cpp.o[K
+[171.353s] [206/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov7251.cpp.o[K
+[171.354s] [207/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx519.cpp.o[K
+[171.854s] [207/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov9281.cpp.o[K
+[171.855s] [208/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx477.cpp.o[K
+[172.094s] [208/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/md_parser_smia.cpp.o[K
+[172.094s] [209/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov64a40.cpp.o[K
+[173.098s] [209/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/imx500_tensor_parser_imx500_tensor_parser.cpp.o[K
+[173.099s] [210/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx500.cpp.o[K
+[173.239s] [210/316] Compiling C++ object src/ipa/rpi/common/librpi_ipa_common.a.p/ipa_base.cpp.o[K
+[173.239s] [211/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov7251.cpp.o[K
+[173.668s] [211/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/algorithm.cpp.o[K
+[173.668s] [212/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_imx708.cpp.o[K
+[175.580s] [212/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/controller.cpp.o[K
+[175.581s] [213/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/cam_helper_ov9281.cpp.o[K
+[176.253s] [213/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/device_status.cpp.o[K
+[176.253s] [214/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/md_parser_smia.cpp.o[K
+[177.483s] [214/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/histogram.cpp.o[K
+[177.484s] [215/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/algorithm.cpp.o[K
+[177.587s] [215/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_af.cpp.o[K
+[177.592s] [216/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/histogram.cpp.o[K
+[178.329s] [216/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_agc.cpp.o[K
+[178.330s] [217/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/device_status.cpp.o[K
+[178.344s] [217/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_agc_channel.cpp.o[K
+[178.344s] [218/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/controller.cpp.o[K
+[185.161s] [218/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_alsc.cpp.o[K
+[185.162s] [219/316] Compiling C++ object src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a.p/imx500_tensor_parser_imx500_tensor_parser.cpp.o[K
+[185.213s] [219/316] Linking static target src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a[K
+[185.213s] [220/316] Linking static target src/ipa/rpi/cam_helper/librpi_ipa_cam_helper.a[K
+[186.165s] [220/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_awb.cpp.o[K
+[186.166s] [221/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_af.cpp.o[K
+[188.464s] [221/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_black_level.cpp.o[K
+[188.470s] [222/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_alsc.cpp.o[K
+[188.940s] [222/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_cac.cpp.o[K
+[188.945s] [223/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_agc.cpp.o[K
+[190.330s] [223/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_ccm.cpp.o[K
+[190.333s] [224/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_black_level.cpp.o[K
+[191.141s] [224/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_contrast.cpp.o[K
+[191.141s] [225/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_agc_channel.cpp.o[K
+[194.482s] [225/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_denoise.cpp.o[K
+[194.483s] [226/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_contrast.cpp.o[K
+[194.992s] [226/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_dpc.cpp.o[K
+[194.993s] [227/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_cac.cpp.o[K
+[196.354s] [227/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_geq.cpp.o[K
+[196.355s] [228/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_ccm.cpp.o[K
+[196.366s] [228/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_hdr.cpp.o[K
+[196.366s] [229/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_awb.cpp.o[K
+[196.469s] [229/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_lux.cpp.o[K
+[196.469s] [230/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_denoise.cpp.o[K
+[198.972s] [230/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_noise.cpp.o[K
+[198.973s] [231/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_geq.cpp.o[K
+[199.463s] [231/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_saturation.cpp.o[K
+[199.463s] [232/316] Compiling C++ object src/ipa/rpi/common/librpi_ipa_common.a.p/ipa_base.cpp.o[K
+[199.479s] [232/316] Linking static target src/ipa/rpi/common/librpi_ipa_common.a[K
+[199.479s] [233/316] Linking static target src/ipa/rpi/common/librpi_ipa_common.a[K
+[200.452s] [233/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_sdn.cpp.o[K
+[200.453s] [234/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_dpc.cpp.o[K
+[201.261s] [234/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_sharpen.cpp.o[K
+[201.261s] [235/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_noise.cpp.o[K
+[201.781s] [235/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_sync.cpp.o[K
+[201.781s] [236/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_lux.cpp.o[K
+[202.481s] [236/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_tonemap.cpp.o[K
+[202.482s] [237/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_saturation.cpp.o[K
+[203.217s] [237/316] Compiling C++ object src/ipa/rpi/pisp/ipa_rpi_pisp.so.p/pisp.cpp.o[K
+[203.218s] [238/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_sdn.cpp.o[K
+[205.719s] [238/316] Compiling C++ object src/ipa/rpi/vc4/ipa_rpi_vc4.so.p/vc4.cpp.o[K
+[205.720s] [239/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_tonemap.cpp.o[K
+[205.881s] [239/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/ipa_context.cpp.o[K
+[205.885s] [240/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_sharpen.cpp.o[K
+[208.102s] [240/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/soft_simple.cpp.o[K
+[208.103s] [241/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_sync.cpp.o[K
+[209.178s] [241/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_awb.cpp.o[K
+[209.180s] [242/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/ipa_context.cpp.o[K
+[209.611s] [242/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_agc.cpp.o[K
+[209.616s] [243/316] Compiling C++ object src/ipa/rpi/controller/librpi_ipa_controller.a.p/rpi_hdr.cpp.o[K
+[209.673s] [243/316] Linking static target src/ipa/rpi/controller/librpi_ipa_controller.a[K
+[209.673s] [244/316] Linking static target src/ipa/rpi/controller/librpi_ipa_controller.a[K
+[212.413s] [244/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_blc.cpp.o[K
+[212.414s] [245/316] Compiling C++ object src/ipa/rpi/pisp/ipa_rpi_pisp.so.p/pisp.cpp.o[K
+[213.098s] [245/316] Linking target src/ipa/rpi/pisp/ipa_rpi_pisp.so[K
+[213.099s] [246/316] Linking target src/ipa/rpi/pisp/ipa_rpi_pisp.so[K
+[213.166s] [246/316] Generating src/ipa/rpi/pisp/ipa_rpi_pisp.so.sign with a custom command[K
+[213.167s] [247/316] Generating src/ipa/rpi/pisp/ipa_rpi_pisp.so.sign with a custom command[K
+[213.834s] [247/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_ccm.cpp.o[K
+[213.834s] [248/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_awb.cpp.o[K
+[213.909s] [248/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_lut.cpp.o[K
+[213.910s] [249/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_agc.cpp.o[K
+[214.045s] [249/316] Compiling C++ object src/apps/common/libapps.a.p/image.cpp.o[K
+[214.046s] [250/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_blc.cpp.o[K
+[214.668s] [250/316] Compiling C++ object src/apps/common/libapps.a.p/options.cpp.o[K
+[214.668s] [251/316] Compiling C++ object src/ipa/rpi/vc4/ipa_rpi_vc4.so.p/vc4.cpp.o[K
+[215.455s] [251/316] Linking target src/ipa/rpi/vc4/ipa_rpi_vc4.so[K
+[215.455s] [252/316] Linking target src/ipa/rpi/vc4/ipa_rpi_vc4.so[K
+[215.485s] [252/316] Generating src/ipa/rpi/vc4/ipa_rpi_vc4.so.sign with a custom command[K
+[215.486s] [253/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/soft_simple.cpp.o[K
+[215.519s] [253/316] Compiling C++ object src/apps/common/libapps.a.p/ppm_writer.cpp.o[K
+[215.522s] [254/316] Generating src/ipa/rpi/vc4/ipa_rpi_vc4.so.sign with a custom command[K
+[217.085s] [254/316] Compiling C++ object src/apps/common/libapps.a.p/stream_options.cpp.o[K
+[217.086s] [255/316] Compiling C++ object src/apps/common/libapps.a.p/image.cpp.o[K
+[218.019s] [255/316] Compiling C++ object src/apps/common/libapps.a.p/event_loop.cpp.o[K
+[218.028s] [256/316] Compiling C++ object src/apps/common/libapps.a.p/ppm_writer.cpp.o[K
+[218.697s] [256/316] Compiling C++ object src/apps/common/libapps.a.p/dng_writer.cpp.o[K
+[218.698s] [257/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_lut.cpp.o[K
+[219.919s] [257/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/environment.cpp.o[K
+[219.920s] [258/316] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_ccm.cpp.o[K
+[220.358s] [258/316] Linking target src/ipa/simple/ipa_soft_simple.so[K
+[220.358s] [259/316] Linking target src/ipa/simple/ipa_soft_simple.so[K
+[220.408s] [259/316] Generating src/ipa/simple/ipa_soft_simple.so.sign with a custom command[K
+[220.412s] [260/316] Generating src/ipa/simple/ipa_soft_simple.so.sign with a custom command[K
+[220.755s] [260/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/helpers_capture.cpp.o[K
+[220.761s] [261/316] Compiling C++ object src/apps/common/libapps.a.p/stream_options.cpp.o[K
+[222.012s] [261/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/main.cpp.o[K
+[222.013s] [262/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/environment.cpp.o[K
+[222.241s] [262/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/test_base.cpp.o[K
+[222.241s] [263/316] Compiling C++ object src/apps/common/libapps.a.p/event_loop.cpp.o[K
+[225.827s] [263/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/tests_capture_test.cpp.o[K
+[225.827s] [264/316] Compiling C++ object src/apps/common/libapps.a.p/dng_writer.cpp.o[K
+[227.227s] [264/316] Compiling C++ object src/apps/cam/cam.p/camera_session.cpp.o[K
+[227.227s] [265/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/main.cpp.o[K
+[227.701s] [265/316] Compiling C++ object src/apps/cam/cam.p/capture_script.cpp.o[K
+[227.702s] [266/316] Compiling C++ object src/apps/common/libapps.a.p/options.cpp.o[K
+[227.743s] [266/316] Linking static target src/apps/common/libapps.a[K
+[227.744s] [267/316] Linking static target src/apps/common/libapps.a[K
+[228.240s] [267/316] Compiling C++ object src/apps/cam/cam.p/file_sink.cpp.o[K
+[228.240s] [268/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/test_base.cpp.o[K
+[230.073s] [268/316] Compiling C++ object src/apps/cam/cam.p/frame_sink.cpp.o[K
+[230.074s] [269/316] Compiling C++ object src/apps/cam/cam.p/frame_sink.cpp.o[K
+[231.744s] [269/316] Compiling C++ object src/apps/cam/cam.p/main.cpp.o[K
+[231.748s] [270/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/helpers_capture.cpp.o[K
+[233.245s] [270/316] Compiling C++ object src/apps/cam/cam.p/drm.cpp.o[K
+[233.251s] [271/316] Compiling C++ object src/apps/cam/cam.p/file_sink.cpp.o[K
+[237.534s] [271/316] Compiling C++ object src/apps/cam/cam.p/kms_sink.cpp.o[K
+[237.541s] [272/316] Compiling C++ object src/apps/cam/cam.p/main.cpp.o[K
+[238.725s] [272/316] Compiling C++ object src/apps/cam/cam.p/sdl_sink.cpp.o[K
+[238.726s] [273/316] Compiling C++ object src/apps/cam/cam.p/capture_script.cpp.o[K
+[238.728s] [273/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture.cpp.o[K
+[238.732s] [274/316] Compiling C++ object src/apps/lc-compliance/lc-compliance.p/tests_capture_test.cpp.o[K
+[239.684s] [274/316] Linking target src/apps/lc-compliance/lc-compliance[K
+[239.685s] [275/316] Linking target src/apps/lc-compliance/lc-compliance[K
+[239.978s] [275/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture_1plane.cpp.o[K
+[239.982s] [276/316] Compiling C++ object src/apps/cam/cam.p/kms_sink.cpp.o[K
+[241.555s] [276/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture_yuv.cpp.o[K
+[241.555s] [277/316] Compiling C++ object src/apps/cam/cam.p/camera_session.cpp.o[K
+[242.302s] [277/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture_mjpg.cpp.o[K
+[242.302s] [278/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture_1plane.cpp.o[K
+[243.107s] [278/316] Compiling C++ object src/apps/ipa-verify/ipa_verify.p/main.cpp.o[K
+[243.107s] [279/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture.cpp.o[K
+[243.474s] [279/316] Generating src/gstreamer/gstlibcamera-controls.cpp with a custom command (wrapped by meson to set env)[K
+[243.474s] [280/316] Compiling C++ object src/apps/cam/cam.p/drm.cpp.o[K
+[243.861s] [280/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamera-utils.cpp.o[K
+[243.865s] [281/316] Generating src/gstreamer/gstlibcamera-controls.cpp with a custom command (wrapped by meson to set env)[K
+[244.108s] [281/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/meson-generated_.._gstlibcamera-controls.cpp.o[K
+[244.109s] [282/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture_yuv.cpp.o[K
+[244.868s] [282/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamera.cpp.o[K
+[244.871s] [283/316] Compiling C++ object src/apps/cam/cam.p/sdl_texture_mjpg.cpp.o[K
+[244.976s] [283/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcameraallocator.cpp.o[K
+[244.976s] [284/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamera.cpp.o[K
+[245.700s] [284/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamerapad.cpp.o[K
+[245.700s] [285/316] Compiling C++ object src/apps/cam/cam.p/sdl_sink.cpp.o[K
+[246.798s] [285/316] Linking target src/apps/cam/cam[K
+[246.799s] [286/316] Compiling C++ object src/apps/ipa-verify/ipa_verify.p/main.cpp.o[K
+[247.281s] [286/316] Linking target src/apps/ipa-verify/ipa_verify[K
+[247.282s] [287/316] Linking target src/apps/cam/cam[K
+[247.406s] [287/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamerapool.cpp.o[K
+[247.407s] [288/316] Linking target src/apps/ipa-verify/ipa_verify[K
+[248.586s] [288/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcameraprovider.cpp.o[K
+[248.587s] [289/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamera-utils.cpp.o[K
+[249.702s] [289/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamerasrc.cpp.o[K
+[249.702s] [290/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamerapad.cpp.o[K
+[249.931s] [290/316] Generating src/py/libcamera/py_gen_controls with a custom command (wrapped by meson to set env)[K
+[249.931s] [291/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcameraallocator.cpp.o[K
+[250.563s] [291/316] Generating src/py/libcamera/py_gen_properties with a custom command (wrapped by meson to set env)[K
+[250.563s] [292/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/meson-generated_.._gstlibcamera-controls.cpp.o[K
+[250.570s] [292/316] Generating src/py/libcamera/py_gen_formats with a custom command[K
+[250.571s] [293/316] Generating src/py/libcamera/py_gen_controls with a custom command (wrapped by meson to set env)[K
+[250.697s] [293/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/meson-generated_.._py_controls_generated.cpp.o[K
+[250.698s] [294/316] Generating src/py/libcamera/py_gen_properties with a custom command (wrapped by meson to set env)[K
+[250.885s] [294/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/meson-generated_.._py_properties_generated.cpp.o[K
+[250.889s] [295/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamerapool.cpp.o[K
+[251.000s] [295/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_camera_manager.cpp.o[K
+[251.001s] [296/316] Generating src/py/libcamera/py_gen_formats with a custom command[K
+[252.490s] [296/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/meson-generated_.._py_formats_generated.cpp.o[K
+[252.497s] [297/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcameraprovider.cpp.o[K
+[259.449s] [297/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_color_space.cpp.o[K
+[259.453s] [298/316] Compiling C++ object src/gstreamer/libgstlibcamera.so.p/gstlibcamerasrc.cpp.o[K
+[259.856s] [298/316] Linking target src/gstreamer/libgstlibcamera.so[K
+[259.857s] [299/316] Linking target src/gstreamer/libgstlibcamera.so[K
+[277.591s] [299/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_enums.cpp.o[K
+[277.592s] [300/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_camera_manager.cpp.o[K
+[279.589s] [300/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_geometry.cpp.o[K
+[279.593s] [301/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/meson-generated_.._py_formats_generated.cpp.o[K
+[289.703s] [301/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_helpers.cpp.o[K
+[289.704s] [302/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/meson-generated_.._py_properties_generated.cpp.o[K
+[297.495s] [302/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_main.cpp.o[K
+[297.497s] [303/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_color_space.cpp.o[K
+[301.387s] [303/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_transform.cpp.o[K
+[301.388s] [304/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_enums.cpp.o[K
+[310.540s] [304/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_camera.cpp.o[K
+[310.542s] [305/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_camera.cpp.o[K
+[314.580s] [305/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_camera_file.cpp.o[K
+[314.582s] [306/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_helpers.cpp.o[K
+[315.714s] [306/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_camera_proxy.cpp.o[K
+[315.715s] [307/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_camera_file.cpp.o[K
+[316.298s] [307/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_compat.cpp.o[K
+[316.299s] [308/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/meson-generated_.._py_controls_generated.cpp.o[K
+[320.094s] [308/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_compat_manager.cpp.o[K
+[323.151s] [309/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_compat.cpp.o[K
+[323.618s] [310/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_geometry.cpp.o[K
+[324.731s] [311/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_camera_proxy.cpp.o[K
+[324.737s] [312/316] Compiling C++ object src/v4l2/v4l2-compat.so.p/v4l2_compat_manager.cpp.o[K
+[324.992s] [312/316] Linking target src/v4l2/v4l2-compat.so[K
+[329.118s] [313/316] Linking target src/v4l2/v4l2-compat.so[K
+[343.398s] [314/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_transform.cpp.o[K
+[343.398s] [315/316] Compiling C++ object src/py/libcamera/_libcamera.so.p/py_main.cpp.o[K
+[343.696s] [315/316] Linking target src/py/libcamera/_libcamera.so[K
+[343.697s] [316/316] Linking target src/py/libcamera/_libcamera.so[K
+[343.832s] Invoked command in '/home/baddies/camera_ws/build/libcamera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson compile
+[343.835s] Invoking command in '/home/baddies/camera_ws/build/libcamera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson install
+[344.211s] ninja: Entering directory `/home/baddies/camera_ws/build/libcamera'
+[344.233s] 
+[344.441s] [0/24] Generating src/libcamera/version.cpp with a custom command[K
+[344.442s] [1/24] Generating src/libcamera/version.cpp with a custom command[K
+[344.457s] Installing include/libcamera/ipa/core_ipa_interface.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.457s] Installing include/libcamera/ipa/mali-c55_ipa_interface.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.458s] Installing include/libcamera/ipa/rkisp1_ipa_interface.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.459s] Installing include/libcamera/ipa/raspberrypi_ipa_interface.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.461s] Installing include/libcamera/ipa/soft_ipa_interface.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.461s] Installing include/libcamera/control_ids.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.462s] Installing include/libcamera/property_ids.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.462s] Installing include/libcamera/formats.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.462s] Installing include/libcamera/libcamera.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.463s] Installing src/libcamera/base/libcamera-base.so.0.5.1 to /home/baddies/camera_ws/install/libcamera/lib
+[344.466s] Installing src/libcamera/libcamera.so.0.5.1 to /home/baddies/camera_ws/install/libcamera/lib
+[344.475s] Installing src/libcamera/proxy/worker/mali-c55_ipa_proxy to /home/baddies/camera_ws/install/libcamera/libexec/libcamera
+[344.476s] Installing src/libcamera/proxy/worker/rkisp1_ipa_proxy to /home/baddies/camera_ws/install/libcamera/libexec/libcamera
+[344.477s] Installing src/libcamera/proxy/worker/raspberrypi_ipa_proxy to /home/baddies/camera_ws/install/libcamera/libexec/libcamera
+[344.478s] Installing src/libcamera/proxy/worker/soft_ipa_proxy to /home/baddies/camera_ws/install/libcamera/libexec/libcamera
+[344.479s] Installing src/ipa/mali-c55/ipa_mali_c55.so to /home/baddies/camera_ws/install/libcamera/lib/libcamera/ipa
+[344.481s] Installing src/ipa/rkisp1/ipa_rkisp1.so to /home/baddies/camera_ws/install/libcamera/lib/libcamera/ipa
+[344.483s] Installing src/ipa/rpi/pisp/ipa_rpi_pisp.so to /home/baddies/camera_ws/install/libcamera/lib/libcamera/ipa
+[344.487s] Installing src/ipa/rpi/vc4/ipa_rpi_vc4.so to /home/baddies/camera_ws/install/libcamera/lib/libcamera/ipa
+[344.492s] Installing src/ipa/simple/ipa_soft_simple.so to /home/baddies/camera_ws/install/libcamera/lib/libcamera/ipa
+[344.493s] Installing src/apps/lc-compliance/lc-compliance to /home/baddies/camera_ws/install/libcamera/bin
+[344.497s] Installing src/apps/cam/cam to /home/baddies/camera_ws/install/libcamera/bin
+[344.499s] Installing src/gstreamer/libgstlibcamera.so to /home/baddies/camera_ws/install/libcamera/lib/gstreamer-1.0
+[344.503s] Installing src/py/libcamera/_libcamera.so to /home/baddies/camera_ws/install/libcamera/lib/python3.12/site-packages/libcamera
+[344.508s] Installing src/v4l2/v4l2-compat.so to /home/baddies/camera_ws/install/libcamera/libexec/libcamera
+[344.510s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/bound_method.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.511s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/class.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.511s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/flags.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.511s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/object.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.512s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/shared_fd.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.512s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/signal.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.512s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/span.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.512s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/base/unique_fd.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/base
+[344.513s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/ipa/ipa_controls.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.514s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/ipa/ipa_interface.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.515s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/ipa/ipa_module_info.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera/ipa
+[344.516s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/camera.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.516s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/camera_manager.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.516s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/color_space.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.517s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/controls.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.517s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/fence.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.517s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/framebuffer.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.517s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/framebuffer_allocator.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.517s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/geometry.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.518s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/logging.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.518s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/orientation.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.518s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/pixel_format.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.518s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/request.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.518s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/stream.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.519s] Installing /home/baddies/camera_ws/src/libcamera/include/libcamera/transform.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.519s] Installing /home/baddies/camera_ws/build/libcamera/include/libcamera/version.h to /home/baddies/camera_ws/install/libcamera/include/libcamera/libcamera
+[344.519s] Installing /home/baddies/camera_ws/build/libcamera/meson-private/libcamera-base.pc to /home/baddies/camera_ws/install/libcamera/lib/pkgconfig
+[344.519s] Installing /home/baddies/camera_ws/src/libcamera/src/libcamera/pipeline/rpi/pisp/data/example.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/pipeline/rpi/pisp
+[344.520s] Installing /home/baddies/camera_ws/src/libcamera/src/libcamera/pipeline/rpi/vc4/data/example.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/pipeline/rpi/vc4
+[344.520s] Installing /home/baddies/camera_ws/src/libcamera/src/libcamera/pipeline/rpi/vc4/data/rpi_apps.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/pipeline/rpi/vc4
+[344.521s] Installing /home/baddies/camera_ws/build/libcamera/meson-private/libcamera.pc to /home/baddies/camera_ws/install/libcamera/lib/pkgconfig
+[344.521s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/mali-c55/data/imx415.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/mali-c55
+[344.521s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/mali-c55/data/uncalibrated.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/mali-c55
+[344.524s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/imx219.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/imx258.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/ov2685.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/ov4689.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/ov5640.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/ov5695.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/ov8858.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rkisp1/data/uncalibrated.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rkisp1
+[344.525s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx219.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.526s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx219_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.526s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx283.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.526s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx290.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.526s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx296.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.526s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx296_mono.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.527s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx378.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.530s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx415.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.531s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx462.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.531s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx477.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.531s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx477_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.531s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx477_scientific.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.531s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx500.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.532s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx519.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.532s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx708.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.532s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx708_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.532s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx708_wide.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.532s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/imx708_wide_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.533s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/ov5647.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.533s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/ov5647_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.533s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/ov64a40.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.534s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/ov9281_mono.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.534s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/se327m12.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.537s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/pisp/data/uncalibrated.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/pisp
+[344.537s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx219.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx219_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx283.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx290.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx296.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx296_mono.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx327.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx378.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx415.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx462.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.538s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx477.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx477_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx477_scientific.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx500.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx519.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx708.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx708_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx708_wide.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.539s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/imx708_wide_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.542s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/ov5647.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.542s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/ov5647_noir.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.542s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/ov64a40.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.542s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/ov7251_mono.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.543s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/ov9281_mono.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.543s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/se327m12.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.543s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/rpi/vc4/data/uncalibrated.json to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/rpi/vc4
+[344.543s] Installing /home/baddies/camera_ws/src/libcamera/src/ipa/simple/data/uncalibrated.yaml to /home/baddies/camera_ws/install/libcamera/share/libcamera/ipa/simple
+[344.543s] Installing /home/baddies/camera_ws/src/libcamera/src/py/libcamera/__init__.py to /home/baddies/camera_ws/install/libcamera/lib/python3.12/site-packages/libcamera
+[344.543s] Installing /home/baddies/camera_ws/build/libcamera/src/v4l2/libcamerify to /home/baddies/camera_ws/install/libcamera/bin
+[344.543s] Installing symlink pointing to libcamera-base.so.0.5.1 to /home/baddies/camera_ws/install/libcamera/lib/libcamera-base.so.0.5
+[344.543s] Installing symlink pointing to libcamera-base.so.0.5 to /home/baddies/camera_ws/install/libcamera/lib/libcamera-base.so
+[344.543s] Installing symlink pointing to libcamera.so.0.5.1 to /home/baddies/camera_ws/install/libcamera/lib/libcamera.so.0.5
+[344.543s] Installing symlink pointing to libcamera.so.0.5 to /home/baddies/camera_ws/install/libcamera/lib/libcamera.so
+[344.544s] Running custom install script '/home/baddies/camera_ws/src/libcamera/src/ipa/ipa-sign-install.sh /home/baddies/camera_ws/build/libcamera/src/ipa-priv-key.pem lib/libcamera/ipa/ipa_mali_c55.so lib/libcamera/ipa/ipa_rkisp1.so lib/libcamera/ipa/ipa_rpi_pisp.so lib/libcamera/ipa/ipa_rpi_vc4.so lib/libcamera/ipa/ipa_soft_simple.so'
+[344.548s] Regenerating IPA modules signatures
+[344.752s] Invoked command in '/home/baddies/camera_ws/build/libcamera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson install

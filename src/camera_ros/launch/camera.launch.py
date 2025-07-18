@@ -20,10 +20,10 @@ def generate_launch_description() -> LaunchDescription:
     # parameters
     camera_param_name = "camera"
     camera_param_default = str(0)
-    camera_param = LaunchConfiguration(
-        camera_param_name,
-        default=camera_param_default,
-    )
+    # camera_param = LaunchConfiguration(
+    #     camera_param_name,
+    #     default=camera_param_default,
+    # )
     camera_launch_arg = DeclareLaunchArgument(
         camera_param_name,
         default_value=camera_param_default,
@@ -47,11 +47,35 @@ def generate_launch_description() -> LaunchDescription:
         ComposableNode(
             package='camera_ros',
             plugin='camera::CameraNode',
+            name='cam_dn',
             parameters=[{
-                "camera": camera_param,
+                "camera": 0,
                 "width": 640,
                 "height": 480,
                 "format": format_param,
+            }],
+            remappings=[{
+                "/camera/image_raw": "/cam_dn/image_raw",
+                "/camera/image_raw.compressed": "/cam_dn/image_raw/compressed",
+                "/camera/camera_info": "/cam_dn/camera_info",
+            }],
+            extra_arguments=[{'use_intra_process_comms': True}],
+        ),
+        
+        ComposableNode(
+            package='camera_ros',
+            plugin='camera::CameraNode',
+            name='cam_fr',
+            parameters=[{
+                "camera": 1,
+                "width": 640,
+                "height": 480,
+                "format": format_param,
+            }],
+            remappings=[{
+                "/camera/image_raw": "/cam_fr/image_raw",
+                "/camera/image_raw.compressed": "/cam_fr/image_raw/compressed",
+                "/camera/camera_info": "/cam_fr/camera_info",
             }],
             extra_arguments=[{'use_intra_process_comms': True}],
         ),

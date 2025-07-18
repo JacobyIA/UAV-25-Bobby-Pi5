@@ -1,6 +1,0 @@
-Invoking command in '/home/baddies/camera_ws/build/libcamera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson setup --libdir=lib --prefix=/home/baddies/camera_ws/install/libcamera --buildtype=release /home/baddies/camera_ws/build/libcamera /home/baddies/camera_ws/src/libcamera
-Invoked command in '/home/baddies/camera_ws/build/libcamera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson setup --libdir=lib --prefix=/home/baddies/camera_ws/install/libcamera --buildtype=release /home/baddies/camera_ws/build/libcamera /home/baddies/camera_ws/src/libcamera
-Invoking command in '/home/baddies/camera_ws/build/libcamera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson compile
-Invoked command in '/home/baddies/camera_ws/build/libcamera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson compile
-Invoking command in '/home/baddies/camera_ws/build/libcamera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson install
-Invoked command in '/home/baddies/camera_ws/build/libcamera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/meson install
